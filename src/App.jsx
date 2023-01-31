@@ -1,7 +1,7 @@
 import { Component } from 'react';
 
 import { CardListComponent, SearchBoxComponent } from './components';
-import style from './App.module.scss';
+import styles from './App.module.scss';
 
 class App extends Component {
   constructor() {
@@ -38,13 +38,14 @@ class App extends Component {
     });
 
     return (
-      <div className={style.App}>
+      <div className={styles.App}>
+        <h1 className={styles.appTitle}>Monsters Rolodex</h1>
         <SearchBoxComponent
           onChangeHandler={onSearchChange}
           placeholder={'search monsters'}
-          className="search-box"
+          className="monsters-search-box"
         />
-        <CardListComponent monsters={filteredMonsters} />
+        <CardListComponent data={filteredMonsters} />
       </div>
     );
   }

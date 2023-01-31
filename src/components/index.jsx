@@ -1,2 +1,2 @@
-export { default as CardListComponent } from './card-list';
-export { default as SearchBoxComponent } from './search-box';
+export { default as CardListComponent } from './CardList';
+export { default as SearchBoxComponent } from './SearchBox';
